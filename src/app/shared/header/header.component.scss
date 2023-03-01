@@ -1,0 +1,40 @@
+@import 'src/styles/variables.scss';
+
+.header-container {
+  background-color: $dark-gray;
+
+  .logo-container {
+    margin-left: 20px;
+  }
+
+  .header-links {
+    font-family: $haetten;
+    color: $white;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+
+    .header-items {
+      margin-left: 20px;
+    }
+
+    .nav-link {
+      color: $white;
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        color: $blue;
+      }
+
+      &.contact-us {
+        border: 1px solid $yellow;
+        border-radius: 40px;
+
+        &:hover,
+        &:active {
+        color: $yellow;
+      }
+      }
+    }
+  }
+}
