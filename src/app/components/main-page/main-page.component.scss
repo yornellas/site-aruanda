@@ -1,0 +1,28 @@
+@import 'src/styles/variables.scss';
+
+.main-page-container {
+  height: 85vh;
+  background-color: $dark-gray;
+
+  .name-container {
+    margin-right: 300px;
+
+    .chevron-down-icon {
+      color: $white;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.13);
+      }
+    }
+  }
+
+
+  .aruandeiro {
+    position: absolute;
+    width: 500px;
+    right: 265px;
+    bottom: 60px;
+  }
+}
