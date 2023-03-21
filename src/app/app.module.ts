@@ -6,12 +6,14 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainPageComponent
+    MainPageComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

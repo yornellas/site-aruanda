@@ -1,0 +1,17 @@
+@import 'src/styles/variables.scss';
+
+.about-us-container {
+  background-color: $dark-gray;
+  color: $white;
+
+  .title {
+    font-family: $impact;
+  }
+
+  .text {
+    font-family: $haetten;
+    font-size: 24px;
+    letter-spacing: .5px;
+    font-weight: lighter;
+  }
+}
