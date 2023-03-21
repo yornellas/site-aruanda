@@ -7,17 +7,18 @@
   .name-container {
     margin-right: 300px;
 
-    .chevron-down-icon {
-      color: $white;
-      cursor: pointer;
-      transition: all .2s ease-in-out;
-  
+    a {
       &:hover {
+        transition: all .2s ease-in-out;
         transform: scale(1.13);
+      }
+
+      .chevron-down-icon {
+        color: $white;
+        cursor: pointer;
       }
     }
   }
-
 
   .aruandeiro {
     position: absolute;
