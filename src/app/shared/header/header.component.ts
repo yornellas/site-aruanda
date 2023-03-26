@@ -9,6 +9,10 @@ export class HeaderComponent {
   @Input() showHeaderLogo: boolean = false
   faCoffee = faCoffee;
 
+  scrollToAboutUsSection() {
+    window.scrollTo(0, (document.body.scrollHeight/2));
+  }
+  
   scrollToFooter() {
     window.scrollTo(0, document.body.scrollHeight);
   }
