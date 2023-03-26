@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'header',
@@ -6,6 +6,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Input() showHeaderLogo: boolean = false
   faCoffee = faCoffee;
 
   scrollToFooter() {

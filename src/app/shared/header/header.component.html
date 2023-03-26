@@ -1,6 +1,6 @@
 <div class="header-container container-fluid d-flex">
   <div class="logo-container my-3">
-    <img class="logo" width="130" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
+    <img *ngIf="showHeaderLogo" class="logo" width="130" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
   </div>
   <div class="header-links container-fluid d-flex align-items-center">
     <ul class="nav container-fluid d-flex justify-content-between">
