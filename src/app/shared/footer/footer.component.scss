@@ -1,0 +1,22 @@
+@import 'src/styles/variables.scss';
+
+.footer-container {
+  background-color: $dark-gray;
+  color: $yellow;
+  height: 90px;
+
+  .social-media-icons {
+    gap: 10px;
+  }
+
+  a,
+  &:link,
+  &:visited {
+    color: $yellow;
+  }
+
+  a:hover {
+    color: $pink;
+    transform: scale(1.2);
+  }
+}
