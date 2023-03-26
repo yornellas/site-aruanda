@@ -21,10 +21,9 @@
   }
 
   .header-links {
-    font-family: $haetten;
+    font-family: $impact;
     color: $white;
     font-size: 24px;
-    letter-spacing: 1.2px;
 
     .header-items {
       margin-left: 20px;
@@ -37,6 +36,7 @@
       &:hover,
       &:active {
         color: $blue;
+        transform: scale(1.05);
       }
 
       &.contact-us {
@@ -46,7 +46,8 @@
         &:hover,
         &:active {
         color: $yellow;
-      }
+        transform: scale(1.1);
+        }
       }
     }
   }
