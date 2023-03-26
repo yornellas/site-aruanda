@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
@@ -7,10 +6,9 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent {
   @Input() showHeaderLogo: boolean = false
-  faCoffee = faCoffee;
 
   scrollToAboutUsSection() {
-    window.scrollTo(0, (document.body.scrollHeight/2));
+    window.scrollTo(0, document.body.scrollHeight * 0.4113);
   }
   
   scrollToFooter() {

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,11 +7,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent {
-  constructor(private router: Router) {
-  }
-  chevronDown= faChevronDown;
+  chevronDown = faChevronDown
 
   scrollToAboutUsSection() {
-    window.scrollTo(0, (document.body.scrollHeight/2));
+    window.scrollTo(0, document.body.scrollHeight * 0.4113);
   }
 }
