@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -6,10 +6,15 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss']
 })
-export class MainPageComponent {
+export class MainPageComponent implements OnInit {
+  @ViewChild("about", {read: ElementRef, static: true}) aboutRef: ElementRef | undefined;
   chevronDown = faChevronDown
-
+  
+  ngOnInit(): void {
+    //acionar funçao pra mexer as fitas
+  }
+  
   scrollToAboutUsSection() {
-    window.scrollTo(0, document.body.scrollHeight * 0.4113);
+    this.aboutRef?.nativeElement.scrollIntoView();
   }
 }
