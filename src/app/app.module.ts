@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { IntroTextComponent } from './components/intro-text/intro-text.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { IntroTextComponent } from './components/intro-text/intro-text.component
     AppRoutingModule,
     FontAwesomeModule,
     NgbModule,
+    PdfViewerModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
