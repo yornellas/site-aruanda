@@ -1,29 +1,89 @@
 @import 'src/styles/variables.scss';
 
 .main-page-container {
-  height: 85vh;
+  height: 88vh;
+  margin-top: 12vh;
   background-color: $dark-gray;
 
-  .name-container {
-    margin: 300px 300px 0 0;
+  a {
+    margin-right: 50%;
 
-    a {
-      &:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.13);
-      }
+    &:hover {
+      transition: all .2s ease-in-out;
+      transform: scale(1.13);
+    }
 
-      .chevron-down-icon {
-        color: $white;
-        cursor: pointer;
-      }
+    .chevron-down-icon {
+      color: $white;
+      cursor: pointer;
     }
   }
 
-  .aruandeiro {
-    position: absolute;
-    width: 500px;
-    right: 265px;
-    bottom: 30px;
+  // .name-container {
+  //   margin: 20% 20% 0 0;
+
+  //   .name {
+  //     width: 130%;
+  //   }
+
+  //   a {
+  //     &:hover {
+  //       transition: all .2s ease-in-out;
+  //       transform: scale(1.13);
+  //     }
+
+  //     .chevron-down-icon {
+  //       color: $white;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+
+  // .aruandeiro {
+  //   position: absolute;
+  //   width: 30%;
+  //   right: 20%;
+  //   bottom: 10%;
+  // }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-page-container {
+    height: 100vh;
+
+    a {
+      display: none !important;
+    }
+
+    .aruandeiro-mobile {
+      width: 80%;
+      margin-top: 10% !important;
+    }
+
+    about-us {
+      margin-top: 20%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-page-container {
+    flex-direction: column;
+    align-items: center;
+
+    // .name,
+    // .aruandeiro,
+    // a>.chevron-down-icon {
+    //   display: none;
+    // }
+
+    .aruandeiro-mobile {
+      display: block !important;
+      margin-top: 25%;
+    }
+
+    .main-logo {
+      display: none !important;
+    }
   }
 }
