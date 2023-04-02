@@ -4,7 +4,7 @@
   position: fixed;
   background-color: $dark-gray;
   z-index: 1;
-  min-height: 12vh;
+  height: 12vh;
 
   .logo-container {
     margin-left: 20px;
@@ -28,6 +28,10 @@
 
     .header-items {
       margin-left: 20px;
+    }
+
+    .nav-item {
+      margin-right: 3%;
     }
 
     .nav-link {
