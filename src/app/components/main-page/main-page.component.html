@@ -1,10 +1,12 @@
-<div class="container-fluid main-page-container d-flex justify-content-center">
-  <div class="name-container d-flex flex-column align-items-center justify-content-center">
-    <img class="name" width="350" src="../../../assets/images/logos/grupo_aruanda.svg">
-    <a (click)="scrollToAboutUsSection()">
-      <fa-icon [icon]="chevronDown" class="chevron-down-icon fa-4x"></fa-icon>
-    </a>
+<div class="d-flex flex-column">
+  <div class="container-fluid main-page-container d-flex justify-content-center">
+    <div class="d-flex flex-column justify-content-center">
+      <img class="main-logo" width="800" src="../../../assets/images/logos/grupo_aruanda_main.svg" alt="">
+      <a class="d-flex justify-content-center" (click)="scrollToIntroTextSection()">
+        <fa-icon [icon]="chevronDown" class="chevron-down-icon fa-4x"></fa-icon>
+      </a>
+    </div>
+    <img class="aruandeiro-mobile d-none" src="../../../assets/images/logos/aruandeiro_nome.svg" alt="">
   </div>
-  <img class="aruandeiro" src="../../../assets/images/logos/aruandeiro_colorido.svg">
+  <intro-text #intro id="intro"></intro-text>
 </div>
-<about-us #about id="aboutUs"></about-us>

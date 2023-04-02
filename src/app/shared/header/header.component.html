@@ -1,27 +1,55 @@
-<div class="header-container container-fluid d-flex">
-  <div class="logo-container my-3">
-    <a (click)="scrollToTop()">
-      <img *ngIf="showHeaderLogo" class="logo" width="130" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
-    </a>
-  </div>
-  <div class="header-links container-fluid d-flex align-items-center">
-    <ul class="nav container-fluid d-flex justify-content-between">
-      <div class="d-flex header-items">
-        <li class="nav-item">
-          <a class="nav-link" id="link" (click)="scrollToAboutUsSection()">SOBRE NÓS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="link" href="#">ARQUIVOS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="link" routerLink="">AGENDA</a>
-        </li>
+<nav class="header-container navbar navbar-expand-lg container-fluid d-flex">
+  <div class="container-fluid">
+    <div class="logo-container my-3">
+      <a class="navbar-brand" (click)="scrollToTop()">
+        <img *ngIf="showHeaderLogo" class="logo" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
+      </a>
+    </div>
+    <div class="header-links collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav container-fluid d-flex justify-content-between">
+        <div class="d-flex header-items">
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+              SOBRE NÓS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+              <li ngbDropdownItem><a class="dropdown-item" disabled="true">EM BREVE</a></li>
+              <!-- <li ngbDropdownItem><a class="dropdown-item" href="#">NOSSA HISTÓRIA</a></li>
+              <li ngbDropdownItem><a class="dropdown-item" href="#">DIRETORIA</a></li>
+              <li ngbDropdownItem><a class="dropdown-item" href="#">COMPONENTES</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+              ACERVO
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+              <li ngbDropdownItem><a class="dropdown-item" href="#">MUSICAL</a></li>
+              <li ngbDropdownItem><a class="dropdown-item">VIDEOGRÁFICO</a></li>
+              <li ngbDropdownItem><a class="dropdown-item">FOTOGRÁFICO</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="link" href="#">PORTFÓLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="link" href="#">CLIPPING</a>
+          </li>
+        </div>
+        <div>
+          <li class="nav-item">
+            <a class="nav-link contact-us px-4" id="link" (click)="scrollToFooter()">CONTATO</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <!-- <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+      aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div>
-        <li class="nav-item">
-          <a class="nav-link contact-us px-4" id="link" (click)="scrollToFooter()">CONTATO</a>
-        </li>
-      </div>
-    </ul>
+    </button> -->
   </div>
-</div>
+</nav>
