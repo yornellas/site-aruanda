@@ -7,14 +7,14 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
-  @ViewChild("about", {read: ElementRef, static: true}) aboutRef: ElementRef | undefined;
+  @ViewChild("intro", {read: ElementRef, static: true}) aboutRef: ElementRef | undefined;
   chevronDown = faChevronDown
   
   ngOnInit(): void {
     //acionar funçao pra mexer as fitas
   }
   
-  scrollToAboutUsSection() {
+  scrollToIntroTextSection() {
     this.aboutRef?.nativeElement.scrollIntoView();
   }
 }
