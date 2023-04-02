@@ -3,7 +3,8 @@
 .footer-container {
   background-color: $dark-gray;
   color: $yellow;
-  height: 90px;
+  height: 30vh;
+  font-family: $roboto;
 
   .social-media-icons {
     gap: 10px;
@@ -18,5 +19,12 @@
   a:hover {
     color: $pink;
     transform: scale(1.2);
+  }
+
+  .phone-contact,
+  .adress-contact {
+    p {
+      margin-bottom: 0;
+    }
   }
 }
