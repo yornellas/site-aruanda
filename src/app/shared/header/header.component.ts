@@ -6,19 +6,13 @@ import { Component, ElementRef, Input, TemplateRef, ViewChild, ViewChildren } fr
 })
 export class HeaderComponent {
   @Input() showHeaderLogo: boolean = false
+
+  //menu mobile:
+  // <i class="fa-regular fa-bars"></i>
+  // <i class="fa-solid fa-xmark"></i>
   
-  // scrollToAboutUsSection() {
-    //   window.scrollTo(0, document.body.scrollHeight * 0.4113);
-    // }
-    scrollToTop() {
-      window.scrollTo(0, 0);
-    }
-    
-    scrollToAboutUsSection() {
-      //nao vai dar certo com o viewchildren
-      //tentar uma funçao q manda qual componente ta ativado no router outlet e usar view children?
-      //ou mandar do main component
-    // this.aboutRef?.nativeElement.scrollIntoView();
+  scrollToTop() {
+    window.scrollTo(0, 0);
   }
   
   scrollToFooter() {
