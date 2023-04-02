@@ -7,10 +7,6 @@ import { Component, ElementRef, Input, TemplateRef, ViewChild, ViewChildren } fr
 export class HeaderComponent {
   @Input() showHeaderLogo: boolean = false
 
-  //menu mobile:
-  // <i class="fa-regular fa-bars"></i>
-  // <i class="fa-solid fa-xmark"></i>
-  
   scrollToTop() {
     window.scrollTo(0, 0);
   }
