@@ -6,22 +6,22 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './components/main-page/main-page.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { IntroTextComponent } from './components/intro-text/intro-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainPageComponent,
-    AboutUsComponent,
+    IntroTextComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgbModule 
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

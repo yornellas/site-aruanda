@@ -1,9 +1,10 @@
 @import 'src/styles/variables.scss';
 
-.about-us-container {
+.main-container {
   background-color: $dark-gray;
   color: $white;
   height: 100vh;
+  // height: 88vh;
 
   .title {
     font-family: $impact;

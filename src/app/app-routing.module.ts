@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { IntroTextComponent } from './components/intro-text/intro-text.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -15,8 +15,8 @@ const routes: Routes = [
     component: MainPageComponent,
     children: [
       {
-        path: 'sobre',
-        component: AboutUsComponent
+        path: 'intro',
+        component: IntroTextComponent
       }
     ]
   },
