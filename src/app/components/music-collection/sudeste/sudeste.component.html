@@ -1,0 +1,18 @@
+<div class="basic-container d-flex flex-column align-items-center">
+  <div class="title-container d-flex flex-column align-items-center my-5">
+    <img src="../../../../assets/images/regions/sudeste.svg" alt="">
+    <h3 class="region-name mb-0">Sudeste</h3>
+  </div>
+  <div *ngFor="let item of items; index as index"
+    class="music-container p-3 my-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="music-name">Música nome tal</span>
+      <a href="" (click)="openPdfModal(index)">
+        <fa-icon [icon]="filePdf" class="fa-2x"></fa-icon>
+      </a>
+    </div>
+    <div class="mt-2">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243138430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-444489983" title="Grupo Aruanda" target="_blank" style="color: #cccccc; text-decoration: none;">Grupo Aruanda</a> · <a href="https://soundcloud.com/user-444489983/folia-do-divino" title="Folia Do Divino" target="_blank" style="color: #cccccc; text-decoration: none;">Folia Do Divino</a></div>
+    </div>
+  </div>
+</div>

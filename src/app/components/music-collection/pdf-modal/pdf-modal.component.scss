@@ -1,0 +1,23 @@
+@import 'src/styles/variables.scss';
+
+.modal-header {
+  .modal-title {
+    font-family: $robotoBold;
+  }
+
+  fa-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+pdf-viewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 5px #222222);
+}

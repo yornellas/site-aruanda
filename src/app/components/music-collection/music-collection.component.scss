@@ -1,0 +1,28 @@
+@import 'src/styles/variables.scss';
+
+.music-collection-container {
+  h1 {
+    font-family: $haetten;
+  }
+    
+  h3 {
+    font-family: $impact;
+    color: $white;
+  }
+}
+
+img {
+  max-width: 90%;
+}
+
+.add-border {
+  border: 1px solid $white;
+  border-radius: 30px;
+  min-width: 21%;
+  text-decoration: none;
+  margin-right: 2%;
+
+  &:hover {
+    border: 3px solid $white;
+  }
+}
