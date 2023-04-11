@@ -12,7 +12,7 @@ import { MusicListInterface } from 'src/app/shared/interfaces/music-list.interfa
   styleUrls: ['./norte.component.scss']
 })
 export class NorteComponent {
-  regionalImageSource: string = "src/assets/images/regions/norte.svg"
+  regionalImageSource: string = "../../../../assets/images/regions/norte.svg"
   regionName: string = 'Norte'
   musicListNorte: MusicListInterface[] = Norte
 }
