@@ -4,6 +4,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { MusicCollectionComponent } from './components/music-collection/music-collection.component';
 import { IntroTextComponent } from './components/main-page/intro-text/intro-text.component';
 import { SudesteComponent } from './components/music-collection/sudeste/sudeste.component';
+import { NorteComponent } from './components/music-collection/norte/norte.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -30,6 +31,10 @@ const routes: Routes = [
   { 
     path: 'acervo-musical/sudeste', 
     component: SudesteComponent,
+  },
+  { 
+    path: 'acervo-musical/norte', 
+    component: NorteComponent,
   },
 ];
 
