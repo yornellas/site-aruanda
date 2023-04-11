@@ -4,6 +4,7 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Norte } from 'src/app/components/music-collection/norte/norte';
 import { PdfModalComponent } from 'src/app/components/music-collection/pdf-modal/pdf-modal.component';
+import { MusicListInterface } from '../interfaces/music-list.interface';
 
 @Component({
   selector: 'regional-music-container',
@@ -13,7 +14,7 @@ import { PdfModalComponent } from 'src/app/components/music-collection/pdf-modal
 export class RegionalMusicContainerComponent {
   @Input() imageSource: string
   @Input() regionName: string
-  @Input() musicList
+  @Input() musicList: MusicListInterface[]
   filePdf = faFilePdf
 
   constructor(private modalService: NgbModal) {}
