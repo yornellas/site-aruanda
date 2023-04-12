@@ -19,8 +19,13 @@ export class RegionalMusicContainerComponent {
 
   constructor(private modalService: NgbModal) {}
 
-  openPdfModal(source: string) {
-    const activeModal = this.modalService.open(PdfModalComponent)
+  openPdfModal(source: string, title: string) {
+    const activeModal = this.modalService.open(PdfModalComponent, {
+      backdrop: true,
+      size: 'lg',
+      windowClass: 'pdf-modal'
+    })
     activeModal.componentInstance.pdfSource = source
+    activeModal.componentInstance.pdfTitle = title
   }
 }
