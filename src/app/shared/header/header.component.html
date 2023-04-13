@@ -1,72 +1,62 @@
-<nav class="header-container navbar navbar-expand-lg container-fluid d-flex">
+<nav class="header-container navbar navbar-expand-lg container-fluid d-flex fixed-top">
   <div class="container-fluid">
     <div class="logo-container my-3">
-      <a class="navbar-brand" (click)="scrollToTop()">
-        <img *ngIf="showHeaderLogo" class="logo" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
+      <a class="navbar-brand" (click)="redirectToMainPage()">
+        <img class="logo" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
       </a>
     </div>
-    <div class="header-links" id="navbarNavDropdown">
-      <ul class="navbar-nav container-fluid d-flex justify-content-between">
-        <div class="d-flex header-items">
-          <li class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
-              SOBRE NÓS
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
-              <li ngbDropdownItem><a class="dropdown-item" disabled="true">EM BREVE</a></li>
-              <!-- <li ngbDropdownItem><a class="dropdown-item" href="#">NOSSA HISTÓRIA</a></li>
-              <li ngbDropdownItem><a class="dropdown-item" href="#">DIRETORIA</a></li>
-              <li ngbDropdownItem><a class="dropdown-item" href="#">COMPONENTES</a></li> -->
-            </ul>
-          </li>
-          <li class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
-              ACERVO
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
-              <li ngbDropdownItem><a class="dropdown-item" href="#">MUSICAL</a></li>
-              <li ngbDropdownItem><a class="dropdown-item">VIDEOGRÁFICO</a></li>
-              <li ngbDropdownItem><a class="dropdown-item">FOTOGRÁFICO</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="link" disabled="true">PORTFÓLIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="link" disabled="true">CLIPPING</a>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a class="nav-link contact-us px-4" id="link" (click)="scrollToFooter()">CONTATO</a>
-          </li>
-        </div>
-      </ul>
-
-      <nav>
-        <div class="navbar">
-          <div class="container nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
-              <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </div>  
-            <div class="logo-menu">
-              <!-- <h1>Navbar</h1> -->
-            </div>
-            <div class="menu-items">
-              <li><a href="#">PORTFÓLIO</a></li>
-              <li><a href="#">PORTFÓLIO</a></li>
-              <li><a href="#">PORTFÓLIO</a></li>
-              <li><a href="#">PORTFÓLIO</a></li>
-              <li><a href="#">PORTFÓLIO</a></li>
-            </div>
+    <div [ngbCollapse]="!isMenuCollapsed" class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="header-links container-fluid" id="navbarNavDropdown">
+        <ul class="navbar-nav d-flex justify-content-between">
+          <div class="d-flex header-items">
+            <li class="nav-item dropdown" ngbDropdown>
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+                SOBRE NÓS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">NOSSA HISTÓRIA - EM BREVE</a></li>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">DIRETORIA - EM BREVE</a></li>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">COMPONENTES - EM BREVE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" ngbDropdown>
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+                ACERVO
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+                <li ngbDropdownItem><a class="dropdown-item" routerLink="acervo-musical">MUSICAL</a></li>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">VIDEOGRÁFICO - EM BREVE</a></li>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">FOTOGRÁFICO - EM BREVE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" ngbDropdown>
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+                PORTFÓLIO
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">EM BREVE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" ngbDropdown>
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+                CLIPPING
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">EM BREVE</a></li>
+              </ul>
+            </li>
           </div>
-        </div>
-      </nav>
-
+          <div class="contact-us-container">
+            <li class="nav-item">
+              <a class="nav-link contact-us px-4" id="link" (click)="scrollToFooter()">CONTATO</a>
+            </li>
+          </div>
+        </ul>
+      </div>
     </div>
-
-    
-  
+    <a class="navbar-toggler" (click)="isMenuCollapsed = !isMenuCollapsed">
+      <fa-icon *ngIf="!isMenuCollapsed" [icon]="barsIcon" class="fa-2x"></fa-icon>
+      <fa-icon *ngIf="isMenuCollapsed" [icon]="closeIcon" class="fa-2x"></fa-icon>
+    </a>
+  </div>
+</nav>
