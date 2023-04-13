@@ -91,6 +91,7 @@
         color: $white;
         &:hover:not(:disabled) {
           color: $purple;
+          background-color: transparent;
         }
 
         &:active {
