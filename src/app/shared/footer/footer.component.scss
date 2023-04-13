@@ -3,13 +3,13 @@
 .footer-container {
   background-color: $yellow;
   color: $dark-gray;
-  height: 50vh;
+  min-height: 50vh;
   font-family: $roboto;
-  font-size: 20px;
+  font-size: 125%;
 
-  .social-media-icons {
-    margin-top: 40px;
-    gap: 30px;
+  .map-container {
+    width: 400px;
+    height: 300px;
   }
 
   a,
@@ -26,10 +26,36 @@
 
 .vertical-line {
   border-left: 1px solid $dark-gray;
-  margin-left: 30px;
-  //height: 300px;
+  margin-left: 2.8%;
 }
 
 .right-items {
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+
+    .map-container {
+      width: 300px;
+      height: 350px;
+    }
+
+    .vertical-line {
+      display: none;
+    }
+
+    .contact-info-container {
+      margin-top: 7%;
+
+      .address {
+        align-items: center;
+      }
+
+      .social-media-icons {
+        margin-top: 4%;
+      }
+    }
+  }
 }
