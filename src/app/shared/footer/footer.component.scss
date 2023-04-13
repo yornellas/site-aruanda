@@ -1,30 +1,35 @@
 @import 'src/styles/variables.scss';
 
 .footer-container {
-  background-color: $dark-gray;
-  color: $yellow;
-  height: 30vh;
+  background-color: $yellow;
+  color: $dark-gray;
+  height: 50vh;
   font-family: $roboto;
+  font-size: 20px;
 
   .social-media-icons {
-    gap: 10px;
+    margin-top: 40px;
+    gap: 30px;
   }
 
   a,
   &:link,
   &:visited {
-    color: $yellow;
+    color: $white
   }
 
   a:hover {
     color: $pink;
     transform: scale(1.2);
   }
+}
 
-  .phone-contact,
-  .adress-contact {
-    p {
-      margin-bottom: 0;
-    }
-  }
+.vertical-line {
+  border-left: 1px solid $dark-gray;
+  margin-left: 30px;
+  //height: 300px;
+}
+
+.right-items {
+  margin-left: 20px;
 }
