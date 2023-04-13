@@ -16,7 +16,7 @@ import { PdfModalComponent } from './components/music-collection/pdf-modal/pdf-m
 import { NorteComponent } from './components/music-collection/norte/norte.component';
 import { RegionalMusicContainerComponent } from './shared/regional-music-container/regional-music-container.component';
 import { SafePipe } from './shared/pipes/safe.pipe';
-
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +38,7 @@ import { SafePipe } from './shared/pipes/safe.pipe';
     NgbModule,
     PdfViewerModule,
     FormsModule,
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
