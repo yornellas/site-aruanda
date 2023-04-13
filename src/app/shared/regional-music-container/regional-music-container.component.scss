@@ -37,25 +37,9 @@
   .audio-container {
     width: 70%;
   }
-
-//   i-frame {
-//     #document {
-//       html {
-//         body {
-//           div {
-//             div {
-//               div.compactSound {
-//                 background-color: $dark-gray !important;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .title-container {
     .region-name {
       top: 24%;
