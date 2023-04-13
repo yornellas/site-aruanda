@@ -4,7 +4,11 @@
   h1 {
     font-family: $haetten;
   }
-    
+
+  .regions-container {
+    min-height: 32vh;
+  }
+
   h3 {
     font-family: $impact;
     color: $white;
@@ -12,7 +16,7 @@
 }
 
 img {
-  max-width: 90%;
+  max-width: 95%;
 }
 
 .add-border {
@@ -24,5 +28,34 @@ img {
 
   &:hover {
     border: 3px solid $white;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .regions-container {
+    flex-direction: column;
+
+    a {
+      min-height: 31vh;
+      margin-bottom: 16%;
+    }
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .regions-container {
+    flex-direction: column;
+
+    a {
+      min-height: 37vh;
+    }
   }
 }
