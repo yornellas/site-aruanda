@@ -1,30 +1,61 @@
 @import 'src/styles/variables.scss';
 
 .footer-container {
-  background-color: $dark-gray;
-  color: $yellow;
-  height: 30vh;
+  background-color: $yellow;
+  color: $dark-gray;
+  min-height: 50vh;
   font-family: $roboto;
+  font-size: 125%;
 
-  .social-media-icons {
-    gap: 10px;
+  .map-container {
+    width: 400px;
+    height: 300px;
   }
 
   a,
   &:link,
   &:visited {
-    color: $yellow;
+    color: $white
   }
 
   a:hover {
     color: $pink;
     transform: scale(1.2);
   }
+}
 
-  .phone-contact,
-  .adress-contact {
-    p {
-      margin-bottom: 0;
+.vertical-line {
+  border-left: 1px solid $dark-gray;
+  margin-left: 2.8%;
+}
+
+.right-items {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+
+    .map-container {
+      width: 300px;
+      height: 350px;
+    }
+
+    .vertical-line {
+      display: none;
+    }
+
+    .contact-info-container {
+      margin-top: 7%;
+
+      .address {
+        align-items: center;
+      }
+
+      .social-media-icons {
+        margin-top: 4%;
+      }
     }
   }
 }

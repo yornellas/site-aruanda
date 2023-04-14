@@ -1,12 +1,12 @@
 @import 'src/styles/variables.scss';
 
 .main-page-container {
-  height: 88vh;
-  margin-top: 12vh;
-  background-color: $dark-gray;
+  .main-logo-container {
+    max-width: 50vw;
+  }
 
   a {
-    margin-right: 50%;
+    margin-right: 26%;
 
     &:hover {
       transition: all .2s ease-in-out;
@@ -20,20 +20,28 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .main-page-container {
     height: 80vh;
 
-    flex-direction: column;
-    align-items: center;
+    justify-content: start !important;
 
-    .main-logo,
-    a>.chevron-down-icon {
-      display: none;
+    .main-logo-container {
+      .main-logo {
+        display: none;
+      }
     }
 
-    .aruandeiro-mobile {
-      display: block !important;
+    .mobile-logo-container {
+      margin-top: 3vh;
+
+      .aruandeiro-mobile {
+        display: block !important;
+      }
+    }
+
+    a {
+      margin-right: 0;
     }
   }
 }
@@ -44,7 +52,6 @@
 
     .aruandeiro-mobile {
       width: 80%;
-      margin-top: 0 !important;
     }
   }
 }

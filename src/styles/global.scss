@@ -2,8 +2,8 @@
 @import 'src/styles/variables.scss';
 
 .basic-container {
-  min-height: 88vh;
-  margin-top: 12vh;
+  min-height: 100vh;
+  padding: 20vh 0;
   background-color: $dark-gray;
   color: $white;
 }

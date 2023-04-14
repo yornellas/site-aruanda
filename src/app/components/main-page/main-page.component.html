@@ -1,12 +1,14 @@
 <div class="d-flex flex-column">
-  <div class="container-fluid main-page-container d-flex justify-content-center">
-    <div class="d-flex flex-column justify-content-center">
-      <img class="main-logo" width="800" src="../../../assets/images/logos/grupo_aruanda_main.svg" alt="">
-      <a class="d-flex justify-content-center" (click)="scrollToIntroTextSection()">
-        <fa-icon [icon]="chevronDown" class="chevron-down-icon fa-4x"></fa-icon>
-      </a>
+  <div class="container-fluid main-page-container basic-container d-flex flex-column align-items-center justify-content-center">
+    <div class="main-logo-container align-self-center">
+      <img class="main-logo " width="100%" src="../../../assets/images/logos/grupo_aruanda_main.svg" alt="">
     </div>
-    <img class="aruandeiro-mobile d-none" src="../../../assets/images/logos/aruandeiro_nome.svg" alt="">
+    <div class="mobile-logo-container justifu-self-center d-flex justify-content-center">
+      <img class="aruandeiro-mobile d-none" src="../../../assets/images/logos/aruandeiro_nome.svg" alt="">
+    </div>
+    <a class="d-flex justify-content-center" (click)="scrollToIntroTextSection()">
+      <fa-icon [icon]="chevronDown" class="chevron-down-icon fa-4x"></fa-icon>
+    </a>
   </div>
   <intro-text #intro id="intro"></intro-text>
 </div>

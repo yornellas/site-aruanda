@@ -10,6 +10,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 })
 export class PdfModalComponent {
   @Input() pdfSource: string
+  @Input() pdfTitle: string
   iconClose = faXmark
   
   constructor(private modalService: NgbModal) {}
