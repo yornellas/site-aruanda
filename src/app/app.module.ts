@@ -17,6 +17,7 @@ import { NorteComponent } from './components/music-collection/norte/norte.compon
 import { RegionalMusicContainerComponent } from './shared/regional-music-container/regional-music-container.component';
 import { SafePipe } from './shared/pipes/safe.pipe';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { CentroOesteComponent } from './components/music-collection/centro-oeste/centro-oeste.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     PdfModalComponent,
     NorteComponent,
     RegionalMusicContainerComponent,
-    SafePipe
+    SafePipe,
+    CentroOesteComponent
   ],
   imports: [
     BrowserModule,
