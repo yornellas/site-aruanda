@@ -7,12 +7,12 @@ import { MusicListInterface } from 'src/app/shared/interfaces/music-list.interfa
 
 
 @Component({
-  selector: 'app-norte',
+  selector: 'norte',
   templateUrl: './norte.component.html',
   styleUrls: ['./norte.component.scss']
 })
 export class NorteComponent {
   regionalImageSource: string = "../../../../assets/images/regions/norte.svg"
   regionName: string = 'Norte'
-  musicListNorte: MusicListInterface[] = Norte
+  musicList: MusicListInterface[] = Norte
 }

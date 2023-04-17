@@ -15,11 +15,10 @@
   a,
   &:link,
   &:visited {
-    color: $white
+    color: $pink;
   }
 
   a:hover {
-    color: $pink;
     transform: scale(1.2);
   }
 }

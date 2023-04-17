@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { MusicListInterface } from 'src/app/shared/interfaces/music-list.interface';
+import { Sudeste } from './sudeste';
 
 
 @Component({
@@ -8,13 +9,7 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./sudeste.component.scss']
 })
 export class SudesteComponent {
-  items = [1,2,3,4,5,6,7,8,9,10]
-  filePdf = faFilePdf
-
-  //links pra passar pro componente do pdf
-  //links pra passar pra url do soundhound
-
-  openPdfModal(index: number) {
-    //index ou o item como parametro?
-  }
+  regionalImageSource: string = "../../../../assets/images/regions/sudeste.svg"
+  regionName: string = 'Sudeste'
+  musicList: MusicListInterface[] = Sudeste
 }

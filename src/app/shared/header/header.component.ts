@@ -8,14 +8,15 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isMenuCollapsed = false
+  isMenuCollapsed = true
   barsIcon = faBars
   closeIcon = faXmark
 
   constructor(private router: Router) {}
 
-  redirectToMainPage() {
-    this.router.navigate(['/pagina-inicial'])
+  redirectTo(page) {
+    this.isMenuCollapsed = true
+    this.router.navigate([page])
     this.scrollToTop()
   }
 
