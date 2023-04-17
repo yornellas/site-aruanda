@@ -10,5 +10,5 @@ import { CentroOeste } from './centro-oeste';
 export class CentroOesteComponent {
   regionalImageSource: string = "../../../../assets/images/regions/centro-oeste.svg"
   regionName: string = 'Centro-Oeste'
-  musicListNorte: MusicListInterface[] = CentroOeste
+  musicList: MusicListInterface[] = CentroOeste
 }
