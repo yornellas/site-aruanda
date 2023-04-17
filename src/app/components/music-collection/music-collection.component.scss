@@ -13,6 +13,14 @@
     font-family: $impact;
     color: $white;
   }
+  
+  .text {
+    font-family: $robotoBold;
+    font-size: 120%;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    margin-top: 5%;
+  }
 }
 
 img {
