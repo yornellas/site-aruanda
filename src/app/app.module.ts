@@ -18,6 +18,8 @@ import { RegionalMusicContainerComponent } from './shared/regional-music-contain
 import { SafePipe } from './shared/pipes/safe.pipe';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { CentroOesteComponent } from './components/music-collection/centro-oeste/centro-oeste.component';
+import { NordesteComponent } from './components/music-collection/nordeste/nordeste.component';
+import { SulComponent } from './components/music-collection/sul/sul.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,9 @@ import { CentroOesteComponent } from './components/music-collection/centro-oeste
     NorteComponent,
     RegionalMusicContainerComponent,
     SafePipe,
-    CentroOesteComponent
+    CentroOesteComponent,
+    NordesteComponent,
+    SulComponent
   ],
   imports: [
     BrowserModule,
