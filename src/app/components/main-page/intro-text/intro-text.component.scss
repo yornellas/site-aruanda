@@ -6,12 +6,13 @@
 
   .title {
     font-family: $impact;
+    letter-spacing: 1px;
   }
 
   .text {
     font-family: $robotoBold;
-    font-size: 24px;
-    letter-spacing: .5px;
+    font-size: 140%;
+    letter-spacing: 0.5px;
     font-weight: lighter;
   }
 }
