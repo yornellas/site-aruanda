@@ -26,6 +26,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": [
+              "pdfjs-dist/web/pdf_viewer",
+              "pdfjs-dist/build/pdf"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
