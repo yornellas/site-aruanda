@@ -1,11 +1,11 @@
 <nav class="header-container navbar navbar-expand-lg container-fluid d-flex fixed-top">
   <div class="container-fluid">
     <div class="logo-container my-3">
-      <a class="navbar-brand" (click)="redirectToMainPage()">
+      <a class="navbar-brand" (click)="redirectTo('/pagina-inicial')">
         <img class="logo" src="../../../assets/images/logos/grupo_aruanda.svg" routerLink="main-page">
       </a>
     </div>
-    <div [ngbCollapse]="!isMenuCollapsed" class="collapse navbar-collapse" id="navbarCollapse">
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarCollapse">
       <div class="header-links container-fluid" id="navbarNavDropdown">
         <ul class="navbar-nav d-flex justify-content-between">
           <div class="d-flex header-items">
@@ -24,7 +24,7 @@
                 ACERVO
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
-                <li ngbDropdownItem><a class="dropdown-item" routerLink="acervo-musical">MUSICAL</a></li>
+                <li ngbDropdownItem><a class="dropdown-item" (click)="redirectTo('acervo-musical')">MUSICAL</a></li>
                 <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">VIDEOGRÁFICO - EM BREVE</a></li>
                 <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">FOTOGRÁFICO - EM BREVE</a></li>
               </ul>
@@ -55,8 +55,8 @@
       </div>
     </div>
     <a class="navbar-toggler" (click)="isMenuCollapsed = !isMenuCollapsed">
-      <fa-icon *ngIf="!isMenuCollapsed" [icon]="barsIcon" class="fa-2x"></fa-icon>
-      <fa-icon *ngIf="isMenuCollapsed" [icon]="closeIcon" class="fa-2x"></fa-icon>
+      <fa-icon *ngIf="isMenuCollapsed" [icon]="barsIcon" class="fa-2x"></fa-icon>
+      <fa-icon *ngIf="!isMenuCollapsed" [icon]="closeIcon" class="fa-2x"></fa-icon>
     </a>
   </div>
 </nav>
