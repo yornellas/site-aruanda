@@ -20,11 +20,6 @@ export class HeaderComponent {
     this.scrollToTop()
   }
 
-  // redirectToMainPage() {
-  //   this.router.navigate(['/pagina-inicial'])
-  //   this.scrollToTop()
-  // }
-
   scrollToTop() {
     window.scrollTo(0, 0);
   }
