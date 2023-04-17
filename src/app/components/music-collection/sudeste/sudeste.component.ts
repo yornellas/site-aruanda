@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PdfModalComponent } from '../pdf-modal/pdf-modal.component';
 import { MusicListInterface } from 'src/app/shared/interfaces/music-list.interface';
 import { Sudeste } from './sudeste';
 
