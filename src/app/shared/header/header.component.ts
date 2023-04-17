@@ -25,6 +25,7 @@ export class HeaderComponent {
   }
   
   scrollToFooter() {
+    this.isMenuCollapsed = true
     window.scrollTo(0, document.body.scrollHeight);
   }
 }
