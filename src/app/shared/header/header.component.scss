@@ -126,6 +126,16 @@ a.navbar-toggler {
   cursor: pointer;
   position: fixed;
   top: 4%;
-  right: 1%;
+  right: 2.5%;
   color: $green;
+}
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    width: 60% !important;
+  }
+
+  a.navbar-toggler {
+    font-size: 100%;
+  }
 }
