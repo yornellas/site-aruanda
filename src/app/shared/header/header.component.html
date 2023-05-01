@@ -24,9 +24,15 @@
                 ACERVO
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
-                <li ngbDropdownItem><a class="dropdown-item" (click)="redirectTo('acervo-musical')">MUSICAL</a></li>
-                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">VIDEOGRÁFICO - EM BREVE</a></li>
-                <li ngbDropdownItem class="disabled"><a class="dropdown-item disabled">FOTOGRÁFICO - EM BREVE</a></li>
+                <li ngbDropdownItem>
+                  <a class="dropdown-item" (click)="redirectTo('acervo-musical')">MUSICAL</a>
+                </li>
+                <li ngbDropdownItem class="disabled">
+                  <a class="dropdown-item disabled">VIDEOGRÁFICO - EM BREVE</a>
+                </li>
+                <li ngbDropdownItem>
+                  <a class="dropdown-item" (click)="redirectTo('acervo-fotografico')">FOTOGRÁFICO</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown" ngbDropdown>
