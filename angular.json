@@ -28,7 +28,8 @@
             "inlineStyleLanguage": "scss",
             "allowedCommonJsDependencies": [
               "pdfjs-dist/web/pdf_viewer",
-              "pdfjs-dist/build/pdf"
+              "pdfjs-dist/build/pdf",
+              "bezier-easing"
             ],
             "assets": [
               "src/favicon.ico",

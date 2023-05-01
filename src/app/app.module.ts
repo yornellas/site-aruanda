@@ -21,6 +21,10 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { CentroOesteComponent } from './components/music-collection/centro-oeste/centro-oeste.component';
 import { NordesteComponent } from './components/music-collection/nordeste/nordeste.component';
 import { SulComponent } from './components/music-collection/sul/sul.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GalleryModule } from 'ng-gallery';
+import { LightboxModule } from  'ng-gallery/lightbox';
+import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +40,8 @@ import { SulComponent } from './components/music-collection/sul/sul.component';
     SafePipe,
     CentroOesteComponent,
     NordesteComponent,
-    SulComponent
+    SulComponent,
+    PhotoCollectionComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +51,10 @@ import { SulComponent } from './components/music-collection/sul/sul.component';
     NgbModule,
     PdfViewerModule,
     FormsModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    BrowserAnimationsModule,
+    GalleryModule,
+    LightboxModule
   ],
   providers: [{
     provide: LocationStrategy, useClass: HashLocationStrategy
