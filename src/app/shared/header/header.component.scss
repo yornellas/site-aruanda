@@ -33,6 +33,7 @@
         .dropdown-item {
           &:hover {
             color: $purple;
+            cursor: pointer;
           }
 
           &:active {
