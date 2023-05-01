@@ -1,0 +1,12 @@
+<div class="basic-container">
+  <gallery 
+    [items]="photos"
+    loadingStrategy="lazy"
+    loadingAttr="lazy"
+    reserveGesturesAction="true"
+    gestures="true"
+    (indexChange)="setPhotoTitle($event)"></gallery>
+    <div class="photo-title p-3">
+      {{photoTitle}}
+    </div>
+</div>

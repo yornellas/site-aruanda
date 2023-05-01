@@ -8,6 +8,7 @@ import { NorteComponent } from './components/music-collection/norte/norte.compon
 import { CentroOesteComponent } from './components/music-collection/centro-oeste/centro-oeste.component';
 import { NordesteComponent } from './components/music-collection/nordeste/nordeste.component';
 import { SulComponent } from './components/music-collection/sul/sul.component';
+import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -50,6 +51,10 @@ const routes: Routes = [
   { 
     path: 'acervo-musical/sul', 
     component: SulComponent,
+  },
+  { 
+    path: 'acervo-fotografico', 
+    component: PhotoCollectionComponent,
   },
 ];
 
