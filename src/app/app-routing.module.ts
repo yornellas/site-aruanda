@@ -9,6 +9,7 @@ import { CentroOesteComponent } from './components/music-collection/centro-oeste
 import { NordesteComponent } from './components/music-collection/nordeste/nordeste.component';
 import { SulComponent } from './components/music-collection/sul/sul.component';
 import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
+import { DirectorsBoardComponent } from './components/directors-board/directors-board.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -27,6 +28,10 @@ const routes: Routes = [
         component: IntroTextComponent
       }
     ]
+  },
+  { 
+    path: 'diretoria', 
+    component: DirectorsBoardComponent,
   },
   { 
     path: 'acervo-musical', 

@@ -1,0 +1,32 @@
+@import 'src/styles/variables.scss';
+
+.board-container {
+  color: $white;
+  font-family: $impact;
+  letter-spacing: .5px;
+
+  .members-container {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 30px;
+    margin: 40px 140px;
+  }
+
+  .members {
+    font-family: $robotoBold;
+
+    border: 1px solid $orange;
+    border-radius: 30px;
+
+    width: 400px;
+    height: 130px;
+
+    img {
+      border-radius: 65px;
+    }
+
+    .position {
+      font-family: $roboto;
+    }
+  }
+}

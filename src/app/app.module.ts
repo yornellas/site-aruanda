@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from  'ng-gallery/lightbox';
 import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
+import { DirectorsBoardComponent } from './components/directors-board/directors-board.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { PhotoCollectionComponent } from './components/photo-collection/photo-co
     CentroOesteComponent,
     NordesteComponent,
     SulComponent,
-    PhotoCollectionComponent
+    PhotoCollectionComponent,
+    DirectorsBoardComponent
   ],
   imports: [
     CommonModule,
