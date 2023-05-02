@@ -5,6 +5,10 @@
   font-family: $impact;
   letter-spacing: .5px;
 
+  .president-container {
+    width: 25em;
+  }
+
   .members-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,15 +22,43 @@
     border: 1px solid $orange;
     border-radius: 30px;
 
-    width: 400px;
-    height: 130px;
-
     img {
       border-radius: 65px;
     }
 
     .position {
       font-family: $roboto;
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .president-container {
+    width: 23em !important;
+  }
+
+  .members-container {
+    grid-template-columns: .8fr .8fr !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    text-align: center;
+  }
+
+  .president-container {
+    width: 20em !important;
+  }
+
+  .members-container {
+    display: flex !important;
+    flex-direction: column;
+    width: 20em !important;
+    margin-top: 5% !important;
+
+    .members {
+      margin-bottom: 6%;
     }
   }
 }
