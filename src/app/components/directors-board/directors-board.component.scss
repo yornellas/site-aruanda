@@ -6,10 +6,10 @@
   letter-spacing: .5px;
 
   .members-container {
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 30px;
-    margin: 40px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin: 3% 0 10%;
   }
 
   .members {
