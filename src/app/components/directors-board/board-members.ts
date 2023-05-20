@@ -34,7 +34,7 @@ export const BoardMembers: BoardMembersInterface[] = [
   {
     name: 'Nilce Dias da Rocha',
     position: 'Coordenadora de Guarda-Roupa',
-    img_url: '../../../assets/images/board-members/NilceDias.jpg'
+    img_url: '../../../assets/images/board-members/NilceDias.jpeg'
   },
   {
     name: 'Maria Bernadete Mariano de Castro Maia',
@@ -46,9 +46,9 @@ export const BoardMembers: BoardMembersInterface[] = [
     position: 'Assistente de Pesquisa',
     img_url: '../../../assets/images/board-members/AnaLuisaCosse.jpg'
   },
-  {
-    name: 'Raimundo Eustáquio de Souza Costa',
-    position: 'Assessor Jurídico',
-    img_url: ''
-  }
+  // {
+  //   name: 'Raimundo Eustáquio de Souza Costa',
+  //   position: 'Assessor Jurídico',
+  //   img_url: ''
+  // }
 ]
