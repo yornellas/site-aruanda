@@ -79,7 +79,7 @@ export const PhotoCollection: PhotoCollectionInterface[] = [
   {
     srcUrl: '../../assets/images/photos/Visita_ao_Reino_de_Moçambique.jpg',
     previewUrl: '../../assets/images/photos/thumbs/Visita_ao_Reino_de_Moçambique_tn.jpg',
-    title: 'Visita ao Reino de Moçambique - Sudeste'
+    title: 'Festa do Rosário - Sudeste'
   },
   {
     srcUrl: '../../assets/images/photos/Folia_do_Divino1.jpg',
@@ -234,7 +234,7 @@ export const PhotoCollection: PhotoCollectionInterface[] = [
   {
     srcUrl: '../../assets/images/photos/Visita_ao_Reino_de_Moçambique1.jpg',
     previewUrl: '../../assets/images/photos/thumbs/Visita_ao_Reino_de_Moçambique1_tn.jpg',
-    title: 'Visita ao Reino de Moçambique - Sudeste'
+    title: 'Festa do Rosário - Sudeste'
   },
   {
     srcUrl: '../../assets/images/photos/Xote_Batido.jpg',
