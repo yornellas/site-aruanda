@@ -1,6 +1,10 @@
 
 @import 'src/styles/variables.scss';
 
+h2 {
+  font-family: $impact;
+}
+
 .basic-container {
   min-height: 100vh;
   padding: 20vh 0;
