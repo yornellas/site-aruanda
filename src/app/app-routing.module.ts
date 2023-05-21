@@ -14,7 +14,6 @@ import { DirectorsBoardComponent } from './components/directors-board/directors-
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
-  scrollOffset: [0, 64],
 };
 
 const routes: Routes = [
