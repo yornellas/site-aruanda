@@ -1,0 +1,38 @@
+<div class="basic-container">
+  <div>
+    <h4 class="text-roboto text-center p-4">
+      O Grupo Folclórico Aruanda recebeu, ao longo de sua história, importantes condecorações:
+    </h4>
+  </div>
+  <div>
+    <gallery 
+      [items]="decorations"
+      [thumb]="false"
+      loadingStrategy="lazy"
+      loadingAttr="lazy"
+      reserveGesturesAction="true"
+      gestures="true"
+      (indexChange)="setTitle($event)">
+    </gallery>
+    <div class="title p-3" [innerHTML]="title"></div>
+  </div>
+  <div class="text-roboto px-3 pt-4">
+    <h5>
+      É importante destacar que o grupo possui duas solicitações em instâncias municipais e 
+      estaduais para que consiga seu registro nos Livros de tombamento do Iphan como patrimônio 
+      cultural imaterial.
+    </h5>
+  </div>
+  <div>
+    <h4 class="text-roboto text-center p-4">Outras condecorações:</h4>
+    <gallery 
+      [items]="decorations"
+      [thumb]="false"
+      loadingStrategy="lazy"
+      loadingAttr="lazy"
+      reserveGesturesAction="true"
+      gestures="true"
+      (indexChange)="setTitle($event)">
+  </gallery>
+  </div>
+</div>

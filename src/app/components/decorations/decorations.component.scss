@@ -1,0 +1,33 @@
+@import 'src/styles/variables.scss';
+
+.basic-container {
+  padding-top: 14vh;
+}
+
+gallery {
+  z-index: 0;
+  background-color: $dark-gray;
+}
+
+::ng-deep gallery {
+  gallery-core {
+    height: 77vh;
+    width: 80%;
+  }
+
+  gallery-nav {
+    i {
+      svg {
+        fill: $yellow !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ::ng-deep gallery {
+    gallery-core {
+      height: 350px;
+    }
+  }
+}
