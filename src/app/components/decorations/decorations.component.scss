@@ -3,11 +3,25 @@
 .basic-container {
   padding-top: 14vh;
 
+  h4 {
+    color: $yellow;
+  }
+}
+
+.main-gallery-container {
   .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
+  }
+}
+
+.second-gallery-container {
+  ::ng-deep gallery {
+    gallery-core {
+      width: 70%;
+    }
   }
 }
 
@@ -32,9 +46,23 @@ gallery {
 }
 
 @media only screen and (max-width: 600px) {
+  .main-gallery-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .title {
+      width: 100%;
+    }
+  }
+
+  gallery {
+    width: 100%;
+  }
+
   ::ng-deep gallery {
     gallery-core {
-      height: 350px;
+      height: 300px;
+      width: 100% !important;
     }
   }
 }

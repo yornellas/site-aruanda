@@ -2,10 +2,11 @@
   <h4 class="text-impact text-center py-5">
     O Grupo Folclórico Aruanda recebeu, ao longo de sua história, importantes condecorações:
   </h4>
-  <div class="d-flex container-fluid pb-4">
+  <div class="d-flex container-fluid main-gallery-container pb-5">
     <div class="title p-3" [innerHTML]="title"></div>
-    <gallery 
-      [items]="decorations"
+    <gallery
+      class="pb-3"
+      [items]="mainDecorations"
       [thumb]="false"
       loadingStrategy="lazy"
       loadingAttr="lazy"
@@ -14,23 +15,24 @@
       (indexChange)="setTitle($event)">
     </gallery>
   </div>
-  <div class="text-roboto px-3 pt-4 w-50">
-    <h5>
+  <div class="d-flex container-fluid justify-content-center text-roboto py-5 w-50">
+    <h5 class=text-center>
       É importante destacar que o grupo possui duas solicitações em instâncias municipais e 
       estaduais para que consiga seu registro nos Livros de tombamento do Iphan como patrimônio 
       cultural imaterial.
     </h5>
   </div>
-  <div class="d-flex flex-column align-items-center pt-5">
-    <h4 class="text-impact text-center p-4">Outras condecorações:</h4>
-    <gallery 
-      [items]="decorations"
+  <div class="d-flex flex-column align-items-center second-gallery-container pt-5">
+    <h4 class="text-impact text-center py-5">Outras condecorações:</h4>
+    <gallery
+      id="second-gallery"
+      class="pb-5"
+      [items]="otherDecorations"
       [thumb]="false"
       loadingStrategy="lazy"
       loadingAttr="lazy"
       reserveGesturesAction="true"
-      gestures="true"
-      (indexChange)="setTitle($event)">
+      gestures="true">
     </gallery>
   </div>
 </div>
