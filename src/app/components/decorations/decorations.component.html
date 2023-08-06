@@ -1,10 +1,9 @@
 <div class="basic-container">
-  <div>
-    <h4 class="text-roboto text-center p-4">
-      O Grupo Folclórico Aruanda recebeu, ao longo de sua história, importantes condecorações:
-    </h4>
-  </div>
-  <div>
+  <h4 class="text-impact text-center py-5">
+    O Grupo Folclórico Aruanda recebeu, ao longo de sua história, importantes condecorações:
+  </h4>
+  <div class="d-flex container-fluid pb-4">
+    <div class="title p-3" [innerHTML]="title"></div>
     <gallery 
       [items]="decorations"
       [thumb]="false"
@@ -14,17 +13,16 @@
       gestures="true"
       (indexChange)="setTitle($event)">
     </gallery>
-    <div class="title p-3" [innerHTML]="title"></div>
   </div>
-  <div class="text-roboto px-3 pt-4">
+  <div class="text-roboto px-3 pt-4 w-50">
     <h5>
       É importante destacar que o grupo possui duas solicitações em instâncias municipais e 
       estaduais para que consiga seu registro nos Livros de tombamento do Iphan como patrimônio 
       cultural imaterial.
     </h5>
   </div>
-  <div>
-    <h4 class="text-roboto text-center p-4">Outras condecorações:</h4>
+  <div class="d-flex flex-column align-items-center pt-5">
+    <h4 class="text-impact text-center p-4">Outras condecorações:</h4>
     <gallery 
       [items]="decorations"
       [thumb]="false"
@@ -33,6 +31,6 @@
       reserveGesturesAction="true"
       gestures="true"
       (indexChange)="setTitle($event)">
-  </gallery>
+    </gallery>
   </div>
 </div>

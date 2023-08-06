@@ -2,17 +2,24 @@
 
 .basic-container {
   padding-top: 14vh;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
 }
 
 gallery {
   z-index: 0;
   background-color: $dark-gray;
+  width: 70%;
 }
 
 ::ng-deep gallery {
   gallery-core {
     height: 77vh;
-    width: 80%;
   }
 
   gallery-nav {
