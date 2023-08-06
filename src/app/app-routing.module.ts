@@ -10,7 +10,6 @@ import { NordesteComponent } from './components/music-collection/nordeste/nordes
 import { SulComponent } from './components/music-collection/sul/sul.component';
 import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 import { DirectorsBoardComponent } from './components/directors-board/directors-board.component';
-import { DecorationsComponent } from './components/decorations/decorations.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -60,9 +59,6 @@ const routes: Routes = [
   { 
     path: 'acervo-fotografico', 
     component: PhotoCollectionComponent,
-  },  { 
-    path: 'condecoracoes', 
-    component: DecorationsComponent,
   },
 ];
 
