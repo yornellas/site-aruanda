@@ -3,7 +3,7 @@
 .basic-container {
   padding-top: 14vh;
 
-  h4 {
+  h1 {
     color: $yellow;
   }
 }
@@ -15,6 +15,11 @@
     justify-content: center;
     width: 30%;
   }
+}
+
+.info-text {
+  border: 1px solid $yellow;
+  border-radius: 8px;
 }
 
 .second-gallery-container {
