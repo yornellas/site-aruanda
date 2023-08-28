@@ -63,7 +63,7 @@ const routes: Routes = [
   },  { 
     path: 'condecoracoes', 
     component: DecorationsComponent,
-  },
+  }
 ];
 
 @NgModule({
