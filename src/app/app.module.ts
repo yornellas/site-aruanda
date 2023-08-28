@@ -26,6 +26,7 @@ import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from  'ng-gallery/lightbox';
 import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 import { DirectorsBoardComponent } from './components/directors-board/directors-board.component';
+import { DecorationsComponent } from './components/decorations/decorations.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { DirectorsBoardComponent } from './components/directors-board/directors-
     NordesteComponent,
     SulComponent,
     PhotoCollectionComponent,
-    DirectorsBoardComponent
+    DirectorsBoardComponent,
+    DecorationsComponent
   ],
   imports: [
     CommonModule,
