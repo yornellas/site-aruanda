@@ -1,0 +1,47 @@
+@import 'src/styles/variables.scss';
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 6em;
+
+  justify-items: center;
+  align-items: center;
+
+  .card {
+    margin-bottom: 20px;
+    background-color: rgba($white, .96);
+    border-radius: 8px;
+
+    &:hover {
+      border: 3px solid $white;
+    }
+
+    .card-img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+      .card-content {
+        padding: 15px;
+        text-align: left;
+
+        .card-text {
+          color: $dark-gray;
+        }
+
+        a {
+          text-decoration: none;
+          color: $pink;
+        }
+      }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .news-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

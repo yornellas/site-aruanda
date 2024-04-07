@@ -1,11 +1,14 @@
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
-<p>news works!</p>
+<div class="basic-container d-flex flex-column align-items-center px-5">
+  <h2 class="pb-5">NOTÍCIAS SOBRE O GRUPO</h2>
+  <div class="news-container px-5">
+    <div *ngFor="let item of news" class="card">
+      <a href={{item.href}} target="_blank">
+        <img class="card-img" src={{item.url}}>
+      </a>
+      <div class="card-content">
+        <p class="card-text text-roboto">{{item.text}}</p>
+        <a href={{item.href}} target="_blank" class="text-roboto-bold">Leia mais</a>
+      </div>
+    </div>
+  </div>
+</div>
