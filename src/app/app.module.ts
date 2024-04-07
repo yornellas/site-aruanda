@@ -27,6 +27,7 @@ import { LightboxModule } from  'ng-gallery/lightbox';
 import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 import { DirectorsBoardComponent } from './components/directors-board/directors-board.component';
 import { DecorationsComponent } from './components/decorations/decorations.component';
+import { NewsComponent } from './components/news/news.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { DecorationsComponent } from './components/decorations/decorations.compo
     SulComponent,
     PhotoCollectionComponent,
     DirectorsBoardComponent,
-    DecorationsComponent
+    DecorationsComponent,
+    NewsComponent
   ],
   imports: [
     CommonModule,
