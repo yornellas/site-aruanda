@@ -28,6 +28,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "hammerjs": "^2.0.8",
+    "ip": "^2.0.1",
     "ng-gallery": "^8.0.3",
     "ng2-pdf-viewer": "^9.1.4",
     "rxjs": "~7.4.0",
