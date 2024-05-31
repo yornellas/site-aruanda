@@ -1,8 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Norte } from 'src/app/components/music-collection/norte/norte';
 import { PdfModalComponent } from 'src/app/components/music-collection/pdf-modal/pdf-modal.component';
 import { MusicListInterface } from '../interfaces/music-list.interface';
 
