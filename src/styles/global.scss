@@ -2,7 +2,7 @@
 @import 'src/styles/variables.scss';
 
 h2 {
-  font-family: $impact;
+  font-family: $bebasNeue;
 }
 
 .basic-container {
@@ -22,4 +22,8 @@ h2 {
 
 .text-roboto-bold {
   font-family: $robotoBold;
+}
+
+.text-bebas {
+  font-family: $bebasNeue;
 }
