@@ -22,3 +22,20 @@
     padding-top: 0;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .intro-text-container {
+    .title {
+      padding: 0 1.5rem;
+      margin-bottom: 1rem !important;
+    }
+
+    .text {
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem !important;
+    }
+  }
+}

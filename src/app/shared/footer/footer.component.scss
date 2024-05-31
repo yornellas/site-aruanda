@@ -3,7 +3,7 @@
 .footer-container {
   background-color: $yellow;
   color: $dark-gray;
-  min-height: 50vh;
+  max-height: 45vh;
   font-family: $roboto;
   font-size: 125%;
 
@@ -36,7 +36,7 @@
   background-color: $yellow;
   font-family: $roboto;
   font-size: 70%;
-  padding: 3% 0.8% 1%;
+  padding: 1% 0.8%;
 
   p {
     margin: 0;
@@ -46,6 +46,7 @@
 @media only screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
+    max-height: 50vh;
 
     .map-container {
       width: 300px;
@@ -57,14 +58,14 @@
     }
 
     .contact-info-container {
-      margin-top: 7%;
+      margin-top: 5% 0;
 
       .address {
         align-items: center;
       }
 
       .social-media-icons {
-        margin-top: 4%;
+        margin-top: 2%;
       }
     }
   }
