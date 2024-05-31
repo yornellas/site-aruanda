@@ -5,6 +5,11 @@
   font-family: $bebasNeue;
   letter-spacing: .5px;
 
+  h3 {
+    color: $orange;
+    font-size: 2rem;
+  }
+
   .president-container {
     width: 25em;
   }
@@ -19,7 +24,7 @@
   .members {
     font-family: $robotoBold;
 
-    border: 2px solid $orange;
+    border: 2.5px solid $orange;
     border-radius: 30px;
 
     img {
