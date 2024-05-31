@@ -24,13 +24,15 @@
   .header-links {
     font-family: $bebasNeue;
     color: $white;
-    font-size: 24px;
+    font-size: 30px;
 
     .header-items {
       margin-left: 20px;
 
       .dropdown-menu {
         .dropdown-item {
+          font-size: 20px;
+
           &:hover {
             color: $purple;
             cursor: pointer;
