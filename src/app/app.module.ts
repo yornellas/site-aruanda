@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { MusicCollectionComponent } from './components/music-collection/music-collection.component';
 import { IntroTextComponent } from './components/main-page/intro-text/intro-text.component';
 import { SudesteComponent } from './components/music-collection/sudeste/sudeste.component';
-import { PdfModalComponent } from './components/music-collection/pdf-modal/pdf-modal.component';
+import { PdfModalComponent } from './shared/pdf-modal/pdf-modal.component';
 import { NorteComponent } from './components/music-collection/norte/norte.component';
 import { RegionalMusicContainerComponent } from './shared/regional-music-container/regional-music-container.component';
 import { SafePipe } from './shared/pipes/safe.pipe';

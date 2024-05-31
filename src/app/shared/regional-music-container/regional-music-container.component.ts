@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PdfModalComponent } from 'src/app/components/music-collection/pdf-modal/pdf-modal.component';
+import { PdfModalComponent } from 'src/app/shared/pdf-modal/pdf-modal.component';
 import { MusicListInterface } from '../interfaces/music-list.interface';
 
 @Component({
