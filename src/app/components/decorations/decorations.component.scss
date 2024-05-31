@@ -4,66 +4,56 @@
   padding-top: 14vh;
 }
 
-.main-gallery-container {
-  .title {
+.cards-container {
+  gap: 40px;
+
+  .__card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 20vw;
+    text-align: center;
+  
+    background-color: $black;
+    border: 1px solid $black;
+    border-radius: 18px;
+
+    h5 {
+      font-family: $robotoBold;
+      padding: 15px 0px;
+    }
+
+    p {
+      text-align: left;
+      font-size: .9rem;
+    }
+  
+    a {
+      padding: 10px;
+  
+      fa-icon {
+        padding: 10px;
+        border: 5px solid $green;
+        border-radius: 50px;
+        font-size: 1.6em;
+        color: $green;
+
+        &:hover {
+          color: $white;
+          border-color: $white;
+        }
+      }
+
+    }
   }
 }
 
 .info-text {
-  border: 1px solid $yellow;
+  border: 2px solid $yellow;
   border-radius: 8px;
 }
 
-.second-gallery-container {
-  ::ng-deep gallery {
-    gallery-core {
-      width: 70%;
-    }
-  }
-}
-
-gallery {
-  z-index: 0;
-  background-color: $dark-gray;
-  width: 70%;
-}
-
-::ng-deep gallery {
-  gallery-core {
-    height: 77vh;
-  }
-
-  gallery-nav {
-    i {
-      svg {
-        fill: $yellow !important;
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  .main-gallery-container {
-    display: flex;
-    flex-direction: column-reverse;
 
-    .title {
-      width: 100%;
-    }
-  }
-
-  gallery {
-    width: 100%;
-  }
-
-  ::ng-deep gallery {
-    gallery-core {
-      height: 300px;
-      width: 100% !important;
-    }
-  }
 }
