@@ -5,6 +5,7 @@
 }
 
 .cards-container {
+  display: flex;
   gap: 40px;
 
   .__card {
@@ -55,6 +56,39 @@
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
 
+    .__card {
+      max-width: 38vw;
+    }
+  }
+
+  .info-text-container {
+    width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .basic-container {
+    h1 {
+      padding: 0 1rem;
+    }
+
+    .cards-container {
+      padding-top: 1.3rem !important;
+
+      .__card {
+        max-width: 75vw;
+      }
+    }
+  
+    .info-text-container {
+      h5 {
+        padding: 2rem !important;
+      }
+    }
+  }
 }
