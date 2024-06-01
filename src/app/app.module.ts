@@ -29,6 +29,7 @@ import { DirectorsBoardComponent } from './components/directors-board/directors-
 import { DecorationsComponent } from './components/decorations/decorations.component';
 import { NewsComponent } from './components/news/news.component';
 import { HistoryComponent } from './components/history/history.component';
+import { BackButtonComponent } from './shared/back-button/back-button.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import { HistoryComponent } from './components/history/history.component';
     DirectorsBoardComponent,
     DecorationsComponent,
     NewsComponent,
-    HistoryComponent
+    HistoryComponent,
+    BackButtonComponent
   ],
   imports: [
     CommonModule,
