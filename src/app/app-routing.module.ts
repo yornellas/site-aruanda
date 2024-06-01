@@ -12,6 +12,7 @@ import { PhotoCollectionComponent } from './components/photo-collection/photo-co
 import { DirectorsBoardComponent } from './components/directors-board/directors-board.component';
 import { DecorationsComponent } from './components/decorations/decorations.component';
 import { NewsComponent } from './components/news/news.component';
+import { HistoryComponent } from './components/history/history.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -29,6 +30,10 @@ const routes: Routes = [
         component: IntroTextComponent
       }
     ]
+  },
+  { 
+    path: 'nossa-historia', 
+    component: HistoryComponent,
   },
   { 
     path: 'diretoria', 

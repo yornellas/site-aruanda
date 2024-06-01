@@ -1,0 +1,116 @@
+@import 'src/styles/variables.scss';
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $roboto;
+
+  .articles-container {
+    text-align: justify;
+    padding: 2rem;
+    max-width: 60vw;
+  
+    article {
+      display: flex;
+      align-items: center;
+
+      span.picture {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &.first {
+        gap: 2rem;
+
+        img {
+          width: 120%;
+        }
+      }
+
+      &.second,
+      &.nineth,
+      &.tenth {
+        flex-direction: column;
+
+        span.picture {
+          align-items: center;
+          padding-top: 1rem;
+
+          img {
+            width: 60%;
+          }
+        }
+      }
+
+      &.third {
+        flex-direction: row-reverse;
+        gap: 2rem;
+
+        span.text {
+          padding-bottom: 2rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &.fourth,
+      &.eigth {
+        gap: 2rem;
+
+        img {
+          width: 140%;
+        }
+      }
+
+      &.fifth,
+      &.seventh {
+        flex-direction: row-reverse;
+        gap: 6rem;
+
+        span.text {
+          padding-bottom: 2rem;
+        }
+
+        img {
+          width: 120%;
+        }
+      }
+
+      &.sixth {
+        flex-direction: column;
+
+        span.picture {
+          span.picture-group {
+            display: flex;
+            gap: 2rem;
+
+            img {
+              width: 25%;
+
+              &.parade {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .subtitle {
+      font-family: $robotoLight;
+      font-size: 70%;
+    }
+  }
+
+  .reference {
+    width: 60vw;
+    font-size: 80%;
+  }
+
+  .article-spacing {
+    padding-top: 3rem;
+  }
+}

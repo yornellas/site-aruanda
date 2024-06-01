@@ -35,9 +35,11 @@
                 aria-labelledby="navbarDropdownMenuLink"
                 ngbDropdownMenu
               >
-                <li ngbDropdownItem class="disabled">
-                  <a class="dropdown-item disabled"
-                    >NOSSA HISTÓRIA - EM BREVE</a
+                <li ngbDropdownItem>
+                  <a
+                    class="dropdown-item"
+                    (click)="redirectTo('nossa-historia')"
+                    >NOSSA HISTÓRIA</a
                   >
                 </li>
                 <li ngbDropdownItem>
