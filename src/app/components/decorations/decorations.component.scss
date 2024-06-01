@@ -20,6 +20,10 @@
     border: 1px solid $black;
     border-radius: 18px;
 
+    -webkit-box-shadow: 5px 5px 5px 0px rgba($black, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba($black, .75);
+    box-shadow: 5px 5px 5px 0px rgba($black,0.75);
+
     h5 {
       font-family: $robotoBold;
       padding: 15px 0px;
