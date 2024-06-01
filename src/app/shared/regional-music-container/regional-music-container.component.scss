@@ -70,12 +70,26 @@
 
 @media only screen and (max-width: 600px) {
   .title-container {
+    flex-direction: row-reverse !important;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 5% !important;
+
+    img {
+      position: unset;
+      width: 17%;
+      opacity: .7;
+    }
+
     .region-name {
-      top: 35%;
+      position: unset;
+      font-size: 2rem;
     }
   }
 
   .music-container {
+    margin: 0 2rem 1.5rem !important;
+
     .audio-container {
       width: 100%;
       height: 50%;

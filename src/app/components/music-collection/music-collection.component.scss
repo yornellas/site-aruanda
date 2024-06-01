@@ -51,15 +51,31 @@ img {
 }
 
 @media only screen and (max-width: 391px) {
-  h1 {
-    font-size: 1.8em;
+  h2 {
+    font-size: 1.8em !important;
   }
 
   .regions-container {
     flex-direction: column;
 
     a {
-      min-height: 37vh;
+      align-items: start !important;
+      min-height: 8vh;
+      min-width: 35vh;
+      border-radius: 40px;
+      margin-bottom: 5%;
+
+      img {
+        display: none;
+      }
+
+      h3 {
+        margin: 0 1rem !important;
+      }
     }
+  }
+
+  .text {
+    font-size: 1.1rem !important;
   }
 }
