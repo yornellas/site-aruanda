@@ -46,7 +46,7 @@
 @media only screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
-    max-height: 50vh;
+    max-height: 65vh;
 
     .map-container {
       width: 300px;
@@ -58,7 +58,7 @@
     }
 
     .contact-info-container {
-      margin-top: 5% 0;
+      margin: 5% 0;
 
       .address {
         align-items: center;
