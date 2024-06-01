@@ -114,3 +114,94 @@
     padding-top: 3rem;
   }
 }
+
+@media only screen and (max-width: 820px) {
+  .articles-container {
+    max-width: 90vw !important;
+    padding: 1rem !important;
+    font-size: .9rem;
+
+    article {
+      &.first,
+      &.fourth,
+      &.eigth {
+        img {
+          width: 100% !important;
+        }
+      }
+
+      &.second,
+      &.nineth,
+      &.tenth {
+        img {
+          width: 50% !important;
+        }
+      }
+    }
+  }
+
+  .reference {
+    width: 90vw !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .articles-container {
+    article {
+      gap: 1rem !important;
+
+      &.first,
+      &.third,
+      &.fourth,
+      &.eigth {
+        flex-direction: column !important;
+      }
+
+      &.second,
+      &.fourth,
+      &.sixth,
+      &.tenth {
+        p {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      &.third {
+        span.text {
+          padding-bottom: 0 !important;
+        }
+      }
+
+      &.second,
+      &.nineth,
+      &.tenth {
+        img {
+          width: 100% !important;
+        }
+      }
+
+      &.fifth,
+      &.seventh {
+        flex-direction: column !important;
+
+        img {
+          width: 100% !important;
+        }
+      }
+
+      &.sixth {
+        span.picture-group {
+          gap: 1rem !important;
+        }
+      }
+    }
+  }
+
+  .article-spacing {
+    padding-top: 1.5rem !important;
+  }
+}
