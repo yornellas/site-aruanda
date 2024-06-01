@@ -1,5 +1,16 @@
 @import 'src/styles/variables.scss';
 
+back-button {
+  place-self: flex-start;
+  padding-left: 5rem;
+
+  &:hover {
+    color: $pink;
+    transition: all .1s ease-in-out;
+    transform: scale(1.2);
+  }
+}
+
 .title-container {
   img {
     position: relative;
@@ -69,6 +80,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  back-button {
+    padding-left: 1.2rem;
+  }
+
   .title-container {
     flex-direction: row-reverse !important;
     justify-content: center;
