@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     max-width: 20vw;
     text-align: center;
   
@@ -24,33 +23,30 @@
     -moz-box-shadow: 5px 5px 5px 0px rgba($black, .75);
     box-shadow: 5px 5px 5px 0px rgba($black,0.75);
 
-    h5 {
-      font-family: $robotoBold;
-      padding: 15px 0px;
-    }
-
-    p {
-      text-align: left;
-      font-size: .9rem;
-    }
-  
     a {
+      display: flex;
+      flex-direction: column;
+
       padding: 10px;
       cursor: pointer;
-  
-      fa-icon {
-        padding: 10px;
-        border: 5px solid $green;
-        border-radius: 50px;
-        font-size: 1.6em;
-        color: $green;
 
-        &:hover {
-          color: $white;
-          border-color: $white;
-        }
+      &:hover {
+        transition: all .1s ease-in-out;
+        transform: scale(1.05);
       }
 
+      h5 {
+        font-family: $robotoBold;
+        padding: 15px 0px;
+        color: $yellow;
+        opacity: .8;
+      }
+  
+      p,
+      b {
+        text-align: left;
+        font-size: .9rem;
+      }
     }
   }
 }

@@ -4,11 +4,11 @@
   </h1>
   <div class="cards-container p-5">
     <div *ngFor="let decoration of mainDecorations" class="__card p-4">
-      <h5>{{ decoration?.title }}</h5>
-      <p>{{ decoration?.text }}</p>
-      <a (click)="openPdfModal(decoration?.url, decoration?.title)"
-        ><fa-icon [icon]="icon"></fa-icon
-      ></a>
+      <a (click)="openPdfModal(decoration?.url, decoration?.title)">
+        <h5>{{ decoration?.title }}</h5>
+        <p>{{ decoration?.text }}</p>
+        <b class="__see-more">Ver mais</b>
+      </a>
     </div>
   </div>
   <div
