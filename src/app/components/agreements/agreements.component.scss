@@ -1,0 +1,77 @@
+@import 'src/styles/variables.scss';
+
+.basic-container {
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.agreements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  .agreement {
+    padding: 4% 0;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.link {
+  a {
+    cursor: pointer;
+    color: $green;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.extra-info-container {
+  padding: 3% 4%;
+
+  p {
+    display: flex;
+    align-items: center;
+    
+    a {
+      padding-left: 3%;
+    }
+  }
+}
+
+.border {
+  border: 1px solid $green !important;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .basic-container {
+    h2 {
+      text-align: center;
+      padding-bottom: 0 !important;
+    }
+
+    .agreements-container {
+      padding: 0 !important;
+
+      .agreement {
+        padding: 5%;
+  
+        span:not(.link) {
+          width: 100% !important
+        }
+      }
+    }
+  
+    .extra-info-container {
+      width: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<div class="basic-container d-flex flex-column align-items-center px-5">
+  <h2 class="pb-5">PARCERIAS E CONVÊNIOS ATUAIS</h2>
+  <div class="agreements-container px-5">
+    <div *ngFor="let agreement of agreements" class="agreement border">
+      <span class="w-75">
+        <p><i><b>{{ agreement.title }}</b></i></p>
+        <p>
+          Publicação da parceria firmada entre o GRUPO FOLCLÓRICO ARUANDA e<br>
+          FUNDAÇÃO NACIONAL DE ARTES - FUNARTE,
+          de acordo com o Decreto nº 8.726/2016, Art. 80.
+        </p>
+        <p>
+          <i>Descrição do objeto da parceria:</i> O objeto do presente Termo de Fomento é a realização do projeto
+          <i>"{{ agreement.project_name }}"</i> visando a consecução de finalidade de interesse público e recíproco que envolve a
+          tranferência de recursos financeiros à Organização da Sociedade Civil (OSC), conforme especificações estabelecidas no
+          plano de trabalho.
+        </p>
+        <p>
+          <i>Valor total da parceria:</i> {{ agreement.value }}
+        </p>
+        <p>
+          <i>Data prevista para a apresentação da prestação de contas:</i> {{ agreement.accountability_date }}
+        </p>
+        <p>
+          <i>Valor total da remuneração da equipe de trabalho, as funções que seus integrantes
+          desempenham e a remuneração prevista para o respectivo exercício:</i> N/A
+        </p>
+      </span>
+
+      <span class="link">
+        <a (click)="openPdfModal(agreement?.url, agreement?.title)">
+          <fa-icon [icon]="filePdf" class="fa-3x"></fa-icon>
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <div class="extra-info-container border w-50">
+    <span class="link">
+      <p>
+        Estatuto social atualizado do Grupo Folclórico Aruanda
+        <a (click)="openPdfModal(extraDocuments.statute.pdf, extraDocuments.statute.title)">
+          <fa-icon [icon]="filePdf" class="fa-2x"></fa-icon>
+        </a>
+      </p>
+    </span>
+
+    <span class="link">
+      <p>
+        Relação nominal atualizada dos dirigentes do Grupo Folclórico Aruanda
+        <a (click)="openPdfModal(extraDocuments.board.pdf, extraDocuments.board.title)">
+          <fa-icon [icon]="filePdf" class="fa-2x"></fa-icon>
+        </a>
+      </p>
+    </span>
+
+    <span class="link">
+      <p>
+        Disponibilização integral dos convênios, contratos, termos de parcerias, acordos, ajustes ou instrumentos congêneres
+        realizados com o Poder Executivo Federal, respectivos aditivos, e relatórios finais de prestação de contas,
+        na forma da legislação aplicável.
+        <a (click)="openPdfModal(extraDocuments.agreements.pdf, extraDocuments.agreements.title)">
+          <fa-icon [icon]="filePdf" class="fa-2x"></fa-icon>
+        </a>
+      </p>
+    </span>
+  </div>
+</div>
