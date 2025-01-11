@@ -13,6 +13,7 @@ import { DirectorsBoardComponent } from './components/directors-board/directors-
 import { DecorationsComponent } from './components/decorations/decorations.component';
 import { NewsComponent } from './components/news/news.component';
 import { HistoryComponent } from './components/history/history.component';
+import { AgreementsComponent } from './components/agreements/agreements.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -74,6 +75,10 @@ const routes: Routes = [
   { 
     path: 'noticias', 
     component: NewsComponent,
+  },
+  { 
+    path: 'parcerias', 
+    component: AgreementsComponent,
   }
 ];
 

@@ -30,6 +30,7 @@ import { DecorationsComponent } from './components/decorations/decorations.compo
 import { NewsComponent } from './components/news/news.component';
 import { HistoryComponent } from './components/history/history.component';
 import { BackButtonComponent } from './shared/back-button/back-button.component';
+import { AgreementsComponent } from './components/agreements/agreements.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,8 @@ import { BackButtonComponent } from './shared/back-button/back-button.component'
     DecorationsComponent,
     NewsComponent,
     HistoryComponent,
-    BackButtonComponent
+    BackButtonComponent,
+    AgreementsComponent
   ],
   imports: [
     CommonModule,
